@@ -19,7 +19,8 @@ namespace BooksAPI.Models
         {
         }
 
-        public System.Data.Entity.DbSet<BooksAPI.Models.Book> Books { get; set; }
+        public System.Data.Entity.DbSet<BooksAPI.Models.Book> Books {
+            get; set; }
 
         public System.Data.Entity.DbSet<BooksAPI.Models.Author> Authors { get; set; }
     }

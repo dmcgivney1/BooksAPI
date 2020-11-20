@@ -28,12 +28,12 @@ namespace BooksAPI.Migrations
             //    );
             //
 
-            context.Authors.AddOrUpdate(new Author[]
-                {
-                new Author() { AuthorId = 1, Name = "Ralls, Kim" },
-                new  Author() { AuthorId = 3, Name = "Randall, Cynthis"},
-                new Author() { AuthorId = 4, Name = "Thurman, Paula" }
-                });
+            context.Authors.AddOrUpdate(new Author[] {
+        new Author() { AuthorId = 1, Name = "Ralls, Kim" },
+        new Author() { AuthorId = 2, Name = "Corets, Eva" },
+        new Author() { AuthorId = 3, Name = "Randall, Cynthia" },
+        new Author() { AuthorId = 4, Name = "Thurman, Paula" }
+        });
 
             context.Books.AddOrUpdate(new Book[] {
         new Book() { BookId = 1,  Title= "Midnight Rain", Genre = "Fantasy",
@@ -55,7 +55,7 @@ namespace BooksAPI.Migrations
 
         new Book() { BookId = 5, Title = "Splish Splash", Genre = "Romance",
             PublishDate = new DateTime(2000, 11, 02), AuthorId = 4, Description =
-            "A deep sea diver finds true love 20,000 leagues beneath the sea.", Price = 6.99M},
+            "A deep sea diver finds true love 20,000 leagues beneath the sea.", Price = 6.99M}
     });
 
 
